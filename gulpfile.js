@@ -143,7 +143,7 @@ gulp.task('default', function(callback){
 	runSequence(
 		'clean:dist',
 		['scss', 'pug', 'copy:js', 'copy:libs', 'copy:fonts', 'copy:img' ],
-		'server',
+		// 'server',
 		callback
 	)
 });
