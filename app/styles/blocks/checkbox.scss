@@ -1,0 +1,66 @@
+.checkbox {
+    margin: 0 0 9.8px;
+    position: relative;
+
+    &__input {
+        display: none;
+
+        &:checked + label {
+            .icon-check {
+                @extend %dib;
+            }
+        }
+    }
+
+    &__label {
+        font-size: 0;
+        white-space: nowrap;
+        cursor: pointer;
+
+        span {
+            @extend %dib;
+            font-family: "PTSans bold";
+            font-size: 21px;
+            line-height: 25px;
+            white-space: normal;
+            color: #000;
+
+            > span {
+                transform: translate3d(0, 1.5px, 0);
+                padding: 0 4px 0 0;
+
+                &:last-child {
+                    padding: 0;
+                    transform: translate3d(0, 3px, 0);
+                    margin: 0 0 3px;
+                }
+            }
+            
+            a {
+                @extend %dib;
+                height: 22px;
+                border-bottom: 1px solid $color_blue;
+    
+                span {
+                    font-family: 'PTSans bold', sans-serif;
+                    font-size: 21px;
+                    text-decoration: none;
+                    color: $color_blue;
+                }
+            }
+        }
+
+
+        .icon-box {
+            @extend %dib;
+            margin: 3px 8px 0 0;
+        }
+
+        .icon-check {
+            position: absolute;
+            top: -6px;
+            left: 3px;
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.radiobox {
+    position: relative;
+    @extend %dib;
+
+    &__input {
+        display: none;
+        
+        &:checked + label {
+            .icon-point {
+                @extend %dib;
+            }
+        }
+    }
+    
+    &__label {
+        transform: translate3d(-5px, 0, 0);
+        cursor: pointer;
+
+        span {
+            @extend %dib;
+            font-family: "PTSans bold";
+            font-size: 20px;
+            line-height: 22px;
+            letter-spacing: -0.05px;
+            color: #000;
+        }
+
+        .icon-circle {
+            @extend %dib;
+            transform: translate3d(0, -10px, 0);
+            margin: 0 0 0 -9px;
+        }
+
+        .icon-point {
+            position: absolute;
+            bottom: 15px;
+            left: 0;
+            display: none;
+            
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                bottom: 18px;
+            }
+        }
+    }
+}

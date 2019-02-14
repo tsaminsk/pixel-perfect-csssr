@@ -1,0 +1,25 @@
+mixin anketaItem(name, data)
+	.anketa__content-item
+		.anketa__content-name= name
+		.anketa__content-data
+			p: input(type="text", value=data)
+
+mixin checkboxItem(id, label, check)
+	.checkbox
+		input.checkbox__input(type="checkbox" id=`checkbox-${id}` name=`checkbox-${id}` checked=check)
+		label.checkbox__label(for=`checkbox-${id}`)
+			.icon-check
+			.icon-box
+			span!= label
+
+mixin radioboxItem(name, id, label, check)
+	.radiobox
+		input.radiobox__input(type="radio" name=name id=`radio-${id}` value=`radio-${id}` checked=check)
+		label.radiobox__label(for=`radio-${id}`)
+			.icon-point
+			.icon-circle
+			span= label
+
+mixin footerNav(name, link)
+	.footer__link
+		a(href=`${link}`)= name

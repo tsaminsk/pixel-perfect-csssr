@@ -1,0 +1,57 @@
+.about {
+    margin: 0 0 42px;
+
+    &__title {
+        margin: 0 0 22px;
+
+        h2 {
+            margin: 0 0 13px 2px;
+        }
+        
+        p.is-text {
+            letter-spacing: -0.05px;
+            margin: 0 0 0 3px;
+        }
+    }
+
+    &__content {
+        textarea {
+            width: 100%;
+            min-height: 186px;
+            resize: none;
+            padding: 1px 0 2px 3px;
+            font-family: 'Courier New';
+            font-size: 30px;
+            line-height: 60px;
+            color: $color_grey2;
+            border: none;
+            background: rgba(0, 0, 0, 0) url(../images/line.png) repeat-y;
+            background-position-y: 21px;
+            background-position-x: -4px;
+            transition: height 0.5s linear;
+            overflow: hidden;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    &__clone {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    &__clone-textarea {
+        position: absolute;
+        top: 0;
+        left: -500%;
+        width: 100%;
+        padding: 3px 2px;
+        font-family: 'Courier New';
+        font-size: 30px;
+        line-height: 60px;
+        white-space: pre-wrap;
+        color: $color_grey2;
+    }
+}

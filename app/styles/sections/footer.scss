@@ -1,0 +1,46 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+
+    &__link {
+        @extend %dib;
+    }
+
+    &__content-title {
+        padding: 18px 0 0;
+        font-family: "PTSans bold";
+        font-size: 22.44px;
+        line-height: 36px;
+        text-align: left;
+        color: $color_brown2;
+        margin: 0 7px 0 -0.7px;
+    }
+
+    &__nav {
+        height: 100%;
+        text-align: center;
+    }
+    
+    &__link {
+        margin: 0 10px;
+        
+        a {
+            padding: 6px 12px;
+            font-family: 'PTSans bold', sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 1px solid $color_brown2;
+            border-radius: 16px;
+            color: $color_brown2;
+            transition: background-color 0.5s linear;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.15);
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+@import "sprite";
+
+.icon {
+	display: inline-block;
+
+}
+
+.icon-box {
+  @include sprite($box);
+}
+
+.icon-business {
+  @include sprite($business);
+}
+
+.icon-check {
+  @include sprite($check);
+}
+
+.icon-circle {
+	@include sprite($circle);
+}
+
+.icon-csssr {
+	@include sprite($csssr);
+}
+
+.icon-cursor {
+	@include sprite($cursor);
+}
+
+.icon-dash_long {
+	@include sprite($dash_long);
+}
+
+.icon-dash_short {
+	@include sprite($dash_short);
+}
+
+.icon-line {
+	@include sprite($line);
+}
+
+.icon-point {
+	@include sprite($point);
+}
+
+.icon-prev {
+	@include sprite($prev);
+}
+
+.icon-secret {
+	@include sprite($secret);
+}

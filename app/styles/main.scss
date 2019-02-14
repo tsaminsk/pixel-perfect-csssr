@@ -1,0 +1,22 @@
+@import "../../node_modules/normalize.scss/normalize";
+
+@import "global/fonts";
+@import "global/variables";
+@import "global/base";
+@import "global/mixins";
+
+@import "global/icons";
+@import "global/sprite";
+
+@import "blocks/checkbox";
+@import "blocks/radiobox";
+
+@import "sections/header";
+@import "sections/anketa";
+@import "sections/checkboxes";
+@import "sections/leveljs";
+@import "sections/about";
+@import "sections/plans";
+@import "sections/date";
+@import "sections/slider";
+@import "sections/footer";

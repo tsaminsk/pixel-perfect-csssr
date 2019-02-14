@@ -1,0 +1,11 @@
+section.checkboxes
+    .container
+        .checkboxes__title
+            h2 Расскажите о&nbsp;себе чекбоксами
+            p.is-text Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не&nbsp;означает, что&nbsp;у&nbsp;вас меньше шансов стать одним из&nbsp;наших товарищей. Это&nbsp;означает, что&nbsp;вы&nbsp;будете получать те&nbsp;задачи, с&nbsp;которыми гарантировано будете справляться.
+        .checkboxes__content
+            each arr, j in checkboxesItems
+                .checkboxes__content-col
+                    each item, index in arr
+                        +checkboxItem(`${j}${index}`, item.label, item.checked, item.add, item.add_1, item.add_2)
+

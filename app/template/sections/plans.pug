@@ -1,0 +1,10 @@
+section.plans
+    .container
+        .plans__title
+            h2 Какие у&nbsp;вас&nbsp;планы на&nbsp;будущее?
+            p.is-text Этот ответ ни&nbsp;на&nbsp;что не&nbsp;повлияет. Не&nbsp;беда, если в&nbsp;будущем ваши планы поменяются.
+        .plans__content
+            .plans__radioboxes
+                - var name = radioboxesItems.name
+                    each item, index in radioboxesItems.data
+                        +radioboxItem(name, `circle-${index}`, item.label, item.checked)                

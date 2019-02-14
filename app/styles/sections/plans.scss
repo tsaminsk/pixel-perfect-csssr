@@ -1,0 +1,22 @@
+.plans {
+    margin: 0 0 55px;
+    
+    &__title {
+        margin: 0 0 15px;
+
+        h2 {
+            margin: 0 0 10px;
+        }
+        
+        p.is-text {
+            letter-spacing: -0.04px;
+            margin: 0;
+        }
+    }
+
+    &__radioboxes {
+        .radiobox {
+            margin: 0 19px 0 0;
+        }
+    }
+}

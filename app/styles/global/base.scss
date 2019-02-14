@@ -1,0 +1,64 @@
+html {
+	font-family: 'PT Sans', sans-serif;
+}
+
+body {
+	position: relative;
+	min-height: calc(100vh - 65px);
+	padding: 0 0 65px;
+	background: $color_grey1 url(../images/bg.jpg) center top repeat-y;
+	animation: show 1s linear;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+h2 {
+	font-family: "PTSans bold";
+	font-size: 24px;
+	line-height: 1;
+	color: $color_brown2;
+}
+
+p.is-text {
+	font-family: "PTSans";
+	color: $color_grey1;
+	font-size: 15px;
+	line-height: 23px;
+}
+
+.container {
+	width: 1000px;
+	padding: 0 117px 0 112px;
+	box-sizing: border-box;
+	margin: 0 auto;
+
+	&--no-padding {
+		padding: 40px 0;
+		margin: 0 auto 50px;
+	}
+}
+
+.rotate180 {
+	transform: rotate(180deg);
+}
+
+%dib {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.is-compressed {
+	letter-spacing: -1px;
+}
+
+@keyframes show {
+	0% {
+		opacity: 0.1;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,57 @@
+.leveljs {
+    margin: 0 0 33px;
+
+    &__title {
+        margin: 0 0 26px 1px;
+    }
+
+    &__content-cursor {
+        height: 20px;
+        background: url(../images/line.png) center -12px no-repeat;
+        background-size: 105% auto;
+        margin: 0 0 -2px;
+    }
+
+    &__content-blocks {
+        font-size: 0;
+    }
+
+    &__content-block {
+        @extend %dib;
+        font-family: "PTSans bold";
+        font-size: 13px;
+        line-height: 19px;
+        color: $color_brown1;
+
+        &:first-child {
+            width: 146px;
+        }
+
+        &:nth-child(2) {
+            width: 226px;
+        }
+
+        &:nth-child(3) {
+            width: 170px;
+        }
+
+        &:last-child {
+            width: calc(100% - 542px);
+            text-align: right;
+
+            .icon-dash_long {
+                transform: translate3d(225px, 0, 0);
+                margin: 0 0 8px;
+            }
+        }
+
+        .icon-dash_short {
+            transform: translate3d(-4px, 0, 0);
+            margin: 0 0 16px;
+        }
+
+        .icon-dash_long {
+            margin: 0 0 3px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        title
+            block title
+        link(rel='stylesheet', href='css/main.min.css')
+    body
+        block vars
+            block vars
+
+        include ./../sections/blocks/navs
+        include ./../sections/mixins/mixins
+        include ./../sections/header
+
+        block content
+        
+        include ./../sections/footer
+
+        script(src='js/main.min.js')

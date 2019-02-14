@@ -1,0 +1,82 @@
+.anketa {
+    padding: 20px 0 0;
+
+    &__content-item {
+        display: flex;
+        justify-content: flex-start;
+        height: 50px;
+        margin: 0 0 13px;
+
+        &:nth-child(2) {
+            margin: -3px 0 11px;
+        }
+
+        &:nth-child(3) {
+            .anketa__content-name {
+                padding: 21px 0 0;
+            }
+
+            .anketa__content-data {
+                padding: 7px 0 0 15px;
+            }
+        }
+
+        &:nth-child(4) {
+            .anketa__content-name {
+                padding: 21px 0 0;
+            }
+
+            .anketa__content-data {
+                padding: 9px 0 0 13px;
+            }
+        }
+
+        &:nth-child(5) {
+            .anketa__content-name {
+                padding: 21px 0 0;
+            }
+
+            .anketa__content-data {
+                padding: 7px 0 0 14px;
+                background-position-y: 18px;
+            }
+        }
+    }
+
+    &__content-name {
+        padding: 18px 0 0;
+        font-family: "PTSans bold";
+        font-size: 22.44px;
+        line-height: 36px;
+        text-align: left;
+        color: $color_brown2;
+        margin: 0 16px 0 -0.7px;
+    }
+
+    &__content-data {
+        flex-grow: 1;
+        padding: 5px 0 0 15px;
+        font-family: "Courier New";
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 400;
+        text-align: left;
+        color: $color_grey2;
+        background: url(../images/line.png) center 19px no-repeat;
+
+        p {
+            width: 100%;
+            margin: 0;
+        }
+
+        input {
+            width: 100%;
+            border: none;
+            background: none;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

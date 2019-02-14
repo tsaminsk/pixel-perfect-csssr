@@ -1,0 +1,37 @@
+.checkboxes {
+    padding: 54px 0 31px;
+
+   &__title {
+       margin: 0 0 27px;
+
+       h2 {
+            margin: 0 0 11px -1px;
+       }
+
+       p.is-text {
+            letter-spacing: -0.06px;
+            color: $color_grey1;
+            margin: 0;
+       }
+   }
+
+   &__content {
+       font-size: 0;
+   }
+
+   &__content-col {
+       @extend %dib;
+
+       &:first-child {
+           width: 258px;
+       }
+
+       &:nth-child(2) {
+           width: 269px;
+       }
+
+       &:nth-child(3) {
+           width: 242px;
+       }
+   }
+}
